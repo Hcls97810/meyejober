@@ -1,0 +1,42 @@
+.carousel {
+  margin-bottom: 50px;
+  &-item {
+    height: 100px;
+
+    &-img {
+      height: 150px;
+      width: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  &-navigation {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    float: right;
+    right: 90px;
+    top: -30px;
+  }
+
+  .swiper-slide {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .customized-swiper-pagination {
+    display: flex;
+    justify-content: center;
+  }
+}
+.h3--text {
+  color: black;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

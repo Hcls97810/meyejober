@@ -1,0 +1,121 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.dashboard-exmenu {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  filter: drop-shadow(0 0 45px rgba(128, 128, 128, 0.42));
+  background-color: white;
+
+  &-title {
+    color: black;
+    font-size: 48px;
+  }
+  &-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    &-section {
+      font-size: 14px;
+      color: black;
+      font-family: "Lato";
+      font-weight: 300;
+    }
+  }
+  &-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    &-section {
+      font-size: 14px;
+      color: black;
+      font-family: "Lato";
+      font-weight: lighter;
+    }
+  }
+  &-items {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: start;
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+  }
+}
+.dashboard-job {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &-footer {
+    margin-left: 10%;
+    margin-bottom: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    &-black-circle {
+      background-color: black;
+      color: white;
+      font-size: 60px;
+      border: 1px solid black;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      align-items: center;
+      text-align: center;
+      line-height: 37px;
+      filter: drop-shadow(0 0 5px #808080);
+    }
+    &-label {
+      color: black;
+      font-size: 30px;
+      font-family: "Lato";
+      font-weight: 400;
+      padding-left: 10px;
+    }
+  }
+}
+.imgsize {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.exmenuitem {
+  color: #5a5a5a;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Lato";
+  &:hover {
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  // &:active {
+  //   color: black;
+  //   font-weight: 700;
+  //   text-decoration: none;
+  // }
+}
+
+.link-text {
+  color: black;
+  &:hover {
+    color: black;
+  }
+}

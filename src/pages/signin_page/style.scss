@@ -1,0 +1,70 @@
+.signin {
+  width: 100%;
+  height: 800px;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.signin-section1 {
+  align-items: center;
+  &-large-title {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  &-small-title {
+    font-size: 36px;
+    font-weight: lighter;
+  }
+}
+.signin-section2 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.signin-section2-forgotpasswd {
+  color: black;
+  font-size: 24px;
+  font-weight: lighter;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+.signin-section2-sigin-btn {
+  width: 100%;
+  height: 70px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px rgba(27, 27, 27, 0.5));
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    &:hover {
+      color: white;
+      text-decoration-color: white;
+      text-decoration: none;
+    }
+  }
+}
+.signin-section3 {
+  &-signup {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    &:hover {
+      color: black;
+      text-decoration-color: black;
+      text-decoration: none;
+    }
+  }
+}
