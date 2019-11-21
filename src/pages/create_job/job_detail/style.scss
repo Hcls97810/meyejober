@@ -1,0 +1,49 @@
+.jobdetail {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.jobdetail-exmenu {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  filter: drop-shadow(0 0 45px rgba(128, 128, 128, 0.42));
+  background-color: white;
+}
+.jobdetail-section {
+  padding-top: 5%;
+  padding-left: 5%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.jobdetail-header {
+  padding-top: 30px;
+  width: 45%;
+  text-align: right;
+  padding-right: 20px;
+}
+.jobdetail-job-main-title {
+  color: black;
+  font-size: 48px;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  margin-left: 50px;
+}
+.jobdetail-job-main-desp {
+  color: black;
+  font-size: 30px;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}

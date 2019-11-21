@@ -1,0 +1,24 @@
+.avatarcard-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.avatar-photo {
+  width: 47px;
+  height: 47px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px rgba(27, 27, 27, 0.5));
+}
+.avatar-name {
+  color: black;
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: 400;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.avatar-menu {
+  width: 30px;
+  height: 30px;
+}

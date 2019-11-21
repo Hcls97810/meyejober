@@ -1,0 +1,79 @@
+.contract-length {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.minus-button {
+  background-color: black;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+  font-size: 48px;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 28px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.plus-button {
+  background-color: black;
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+  font-size: 35px;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 38px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.stick-bkg {
+  background-color: #7b7e8e;
+  height: 4px;
+  width: 320px;
+}
+.stick-plus-progress0 {
+  background-color: black;
+  height: 4px;
+  width: 0%;
+}
+.stick-plus-progress1 {
+  background-color: black;
+  height: 4px;
+  width: 20%;
+}
+.stick-plus-progress2 {
+  background-color: black;
+  height: 4px;
+  width: 40%;
+}
+.stick-plus-progress3 {
+  background-color: black;
+  height: 4px;
+  width: 60%;
+}
+.stick-plus-progress4 {
+  background-color: black;
+  height: 4px;
+  width: 80%;
+}
+.stick-plus-progress5 {
+  background-color: black;
+  height: 4px;
+  width: 100%;
+}
+
+.contract-length-label {
+  color: black;
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 400;
+}

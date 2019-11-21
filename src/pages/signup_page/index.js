@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
+import BlackButton from "./../../components/black_button";
 import "./style.scss";
 
 function SignUpPage() {
@@ -30,17 +31,17 @@ function SignUpPage() {
               PrivacyPolicy
             </a>
           </div>
-          <div className="signup-section2-sigup-btn">
-            <a href="/profile" className="signup-section2-sigup-btn-text">
-              SIGN UP
+          <div className="mt-5">
+            <BlackButton btn_name="SIGN UP" page_url="/dashboard"></BlackButton>
+          </div>
+          <div className="signup-section2-textlink">
+            <a href="/forgot" className="signup-section2-forgot">
+              Forgot Password?
+            </a>
+            <a href="/" className="signup-section2-signin">
+              Sign In
             </a>
           </div>
-          <a href="/forgot" className="signup-section2-forgot">
-            Forgot Password?
-          </a>
-          <a href="/" className="signup-section2-signin">
-            Sign In
-          </a>
         </div>
       </div>
       <div className="signup-section--bkg"></div>

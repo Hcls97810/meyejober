@@ -6,36 +6,8 @@
   flex-direction: row;
 }
 .verify-section--bkg {
-  background-color: black;
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  &-title {
-    color: white;
-    font-size: 85px;
-    font-weight: 400;
-  }
-  &-numbergroup {
-    display: flex;
-    flex-direction: row;
-
-    &-number {
-      color: white;
-      font-size: 100px;
-      width: 117px;
-      height: 117px;
-      border-radius: 10px;
-      filter: drop-shadow(0 0 45px rgba(123, 126, 142, 0.5));
-      background-color: #7b7e8e;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  }
+  height: 100%;
 }
 
 .verify-section--input {
@@ -51,19 +23,24 @@
 
 .verify-section1 {
   width: 100%;
-  align-items: center;
   padding-bottom: 40px;
   &-large-title {
     font-size: 60px;
-    font-weight: bold;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
   }
   &-small-title {
     font-size: 36px;
     font-weight: lighter;
+    font-family: "Lato";
+    text-align: left;
   }
   &-tiny-title {
     font-size: 24px;
     font-weight: 500;
+    font-family: "Lato";
+    text-align: left;
   }
 }
 .verify-section2 {

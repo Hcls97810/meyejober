@@ -1,0 +1,90 @@
+.walletpage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.walletpage-exmenu {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10%;
+  filter: drop-shadow(0 0 45px rgba(128, 128, 128, 0.42));
+  background-color: white;
+}
+.walletpage-card-container {
+  max-width: 382px;
+  max-height: 210px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 45px rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(
+    -39deg,
+    #7b7b82 48%,
+    rgba(123, 125, 141, 0) 100%
+  );
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.walletpage-card {
+  width: 100%;
+  height: 100%;
+}
+.walletpage-addbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.walletpage-section {
+  padding-top: 1%;
+  padding-left: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.walletpage-section-title {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Lato";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.walletpage-header {
+  padding-top: 30px;
+  width: 25%;
+  text-align: right;
+  padding-right: 20px;
+}
+.walletpage-row-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.walletpage-item-label {
+  color: black;
+  font-size: 24px;
+  font-family: "Lato";
+  font-weight: 700;
+}
+.walletpage-item-value {
+  color: black;
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Lato";
+}
+.walletpage-item-toggle {
+  width: 400px;
+}
+.walletpage-desp {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: left;
+}

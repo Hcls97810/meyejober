@@ -1,0 +1,50 @@
+.dashboard-exmenu {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  filter: drop-shadow(0 0 45px rgba(128, 128, 128, 0.42));
+  background-color: white;
+
+  &-title {
+    padding-top: 30px;
+    color: black;
+    font-size: 48px;
+  }
+  &-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    &-section {
+      font-size: 14px;
+      color: black;
+      font-family: "Lato";
+      font-weight: 300;
+    }
+  }
+  &-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    &-section {
+      font-size: 14px;
+      color: black;
+      font-family: "Lato";
+      font-weight: lighter;
+    }
+  }
+  &-items {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: start;
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+  }
+}

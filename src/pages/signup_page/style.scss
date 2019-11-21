@@ -27,10 +27,12 @@
   padding-bottom: 40px;
   &-large-title {
     font-size: 60px;
-    font-weight: bold;
+    font-family: "Lato";
+    font-weight: 700;
   }
   &-small-title {
     font-size: 36px;
+    font-family: "Lato";
     font-weight: lighter;
   }
 }
@@ -86,21 +88,33 @@
     }
   }
 }
+.signup-section2-textlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .signup-section2-forgot {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: black;
   font-size: 24px;
-  font-weight: lighter;
+  font-family: "Lato";
+  font-weight: 300;
+  width: 200px;
   &:hover {
     text-decoration: none;
     color: black;
   }
 }
 .signup-section2-signin {
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: black;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: "Lato";
+  width: 70px;
   &:hover {
     color: black;
     text-decoration-color: black;

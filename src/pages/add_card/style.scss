@@ -1,0 +1,98 @@
+.addcard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.addcard-exmenu {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10%;
+  filter: drop-shadow(0 0 45px rgba(128, 128, 128, 0.42));
+  background-color: white;
+}
+.addcard-card-container {
+  max-width: 382px;
+  max-height: 210px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 45px rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(
+    -39deg,
+    #7b7b82 48%,
+    rgba(123, 125, 141, 0) 100%
+  );
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.addcard-card {
+  width: 100%;
+  height: 100%;
+}
+.visacheck {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.mastercheck {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.addcard-addbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.addcard-section {
+  padding-top: 5%;
+  padding-left: 5%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.addcard-section-title {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Lato";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.addcard-header {
+  padding-top: 30px;
+  width: 45%;
+  text-align: right;
+  padding-right: 20px;
+}
+.addcard-row-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addcard-item-toggle {
+  width: 400px;
+}
+.addcard-desp {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.display-show {
+  display: block;
+}
+.display-hide {
+  display: none;
+}

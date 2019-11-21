@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
+import BlackButton from "./../../components/black_button";
 import "./style.scss";
 
 function SignInPage() {
@@ -12,11 +13,7 @@ function SignInPage() {
       <div className="container signin-section2">
         <TextField label="Email Address" className="pb-3" />
         <TextField label="Password" className="pb-5" />
-        <div className="container signin-section2-sigin-btn">
-          <a href="#" className="signin-section2-sigin-btn-text">
-            SIGN IN
-          </a>
-        </div>
+        <BlackButton btn_name="SIGNIN" page_url="/dashboard"></BlackButton>
         <a href="/forgot" className="signin-section2-forgotpasswd pt-3">
           Forgot Password?
         </a>

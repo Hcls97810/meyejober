@@ -7,6 +7,8 @@ import {
   MenuItem,
   FormControl
 } from "@material-ui/core";
+import BlackButton from "./../../components/black_button";
+import BlackCircle from "./../../components/black_circle";
 import "./style.scss";
 
 const useStyles = makeStyles(theme => ({
@@ -40,14 +42,17 @@ function ProfilePage() {
       </div>
       <div className="profile-section2">
         <div className="profile-personal">
-          <div>Personal Profile</div>
+          <div>
+            <BlackCircle
+              circle_label1="1"
+              circle_label2="Personal Profile"
+            ></BlackCircle>
+          </div>
           <TextField label="First Name" className="pb-3" />
           <TextField label="Last Name" className="pb-3" />
           <TextField label="Post Code" className="pb-3" />
-          <div className="profile-personal-address-btn">
-            <a href="#" className="profile-personal-address-btn-text">
-              LOOKUP ADDRESS
-            </a>
+          <div className="mb-3 mt-3">
+            <BlackButton btn_name="LOOKUP ADDRESS"></BlackButton>
           </div>
           <div className="profile-personal-select-country">
             <FormControl className={classes.formControl}>
@@ -68,7 +73,12 @@ function ProfilePage() {
           </div>
         </div>
         <div className="profile-business">
-          <div>Business Profile</div>
+          <div>
+            <BlackCircle
+              circle_label1="2"
+              circle_label2="Business Profile"
+            ></BlackCircle>
+          </div>
           <TextField label="Business Name" className="pb-3" />
           <TextField label="Business Activity" className="pb-3" />
           <TextField label="Business Description" className="pb-3" />
@@ -76,13 +86,12 @@ function ProfilePage() {
           <TextField label="Business Email" className="pb-3" />
           <TextField label="Job Title" className="pb-3" />
           <TextField label="Post Code" className="pb-3" />
-        </div>
-      </div>
-      <div className="container">
-        <div className="profile-personal-address-btn">
-          <a href="/dashboard" className="profile-personal-address-btn-text">
-            Create Profile
-          </a>
+          <div className="container mt-5">
+            <BlackButton
+              btn_name="CREATE PROFILE"
+              page_url="/dashboard"
+            ></BlackButton>
+          </div>
         </div>
       </div>
     </div>

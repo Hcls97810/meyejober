@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
+import BlackButton from "./../../components/black_button";
+import HalfBkg from "./../../components/half_bkg";
 import "./style.scss";
 
 function VerifyPage() {
@@ -9,9 +11,12 @@ function VerifyPage() {
         <div className="verify-section1">
           <div className="verify-section1-large-title">Verify Code</div>
           <div className="verify-section1-small-title">
-            Enter the 4 digit code sent to you by text message.
+            Enter the 4 digit code
           </div>
-          <div className="verify-section1-tiny-title">
+          <div className="verify-section1-small-title">
+            sent to you by text message.
+          </div>
+          <div className="verify-section1-tiny-title mt-5">
             This code is valid for 05:00
           </div>
         </div>
@@ -50,23 +55,13 @@ function VerifyPage() {
               pattern="[0-9]{1}"
             />
           </div>
-          <div className="verify-section2-verify-btn">
-            <a href="/reset" className="verify-section2-verify-btn-text">
-              VERIFY
-            </a>
+          <div className="mt-5">
+            <BlackButton btn_name="VERIFY" page_url="/verify"></BlackButton>
           </div>
         </div>
       </div>
       <div className="verify-section--bkg">
-        <div className="verify-section--bkg-title">
-          meye<b>jobber</b>
-        </div>
-        <div className="verify-section--bkg-numbergroup">
-          <div className="verify-section--bkg-numbergroup-number">1</div>
-          <div className="verify-section--bkg-numbergroup-number">2</div>
-          <div className="verify-section--bkg-numbergroup-number">3</div>
-          <div className="verify-section--bkg-numbergroup-number">4</div>
-        </div>
+        <HalfBkg></HalfBkg>
       </div>
     </div>
   );

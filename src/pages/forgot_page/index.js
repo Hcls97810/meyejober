@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
+import HalfBkg from "./../../components/half_bkg";
+import BlackButton from "./../../components/black_button";
 import "./style.scss";
 
 function ForgotPage() {
@@ -14,10 +16,8 @@ function ForgotPage() {
         </div>
         <div className="forgot-section2">
           <TextField label="Phone Number" className="pb-3" />
-          <div className="forgot-section2-continue-btn">
-            <a href="/verify" className="forgot-section2-continue-btn-text">
-              CONTINUE
-            </a>
+          <div className="mt-5">
+            <BlackButton btn_name="CONTINUE" page_url="/verify"></BlackButton>
           </div>
         </div>
         <a href="/" className="forgot-section2-signin">
@@ -25,15 +25,7 @@ function ForgotPage() {
         </a>
       </div>
       <div className="forgot-section--bkg">
-        <div className="forgot-section--bkg-title">
-          meye<b>jobber</b>
-        </div>
-        <div className="forgot-section--bkg-numbergroup">
-          <div className="forgot-section--bkg-numbergroup-number">1</div>
-          <div className="forgot-section--bkg-numbergroup-number">2</div>
-          <div className="forgot-section--bkg-numbergroup-number">3</div>
-          <div className="forgot-section--bkg-numbergroup-number">4</div>
-        </div>
+        <HalfBkg></HalfBkg>
       </div>
     </div>
   );
