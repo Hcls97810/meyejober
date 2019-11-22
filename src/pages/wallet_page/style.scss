@@ -33,6 +33,16 @@
   width: 100%;
   height: 100%;
 }
+.visacheck {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.mastercheck {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
 .walletpage-addbtn {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -87,4 +97,10 @@
   font-weight: 400;
   font-family: "Lato";
   text-align: left;
+}
+.display-show {
+  display: block;
+}
+.display-hide {
+  display: none;
 }

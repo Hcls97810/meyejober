@@ -11,6 +11,8 @@ import {
 import AvatarCard from "./../../../components/avatar_card";
 import Journey from "./../../../components/journey";
 import BlackButton from "./../../../components/black_button";
+import CommonInput from "./../../../components/common_input";
+import SelectMaterial from "./../../../components/select_material";
 import "./style.scss";
 
 const useStyles = makeStyles(theme => ({
@@ -40,22 +42,9 @@ function JobDetail() {
       </div>
       <div className="jobdetail-section">
         <div className="jobdetail-job-main-title">Create Job</div>
-        <TextField label="Job Title" className="pb-3" />
-        <TextField label="Job Description" className="pb-3" />
-        <TextField label="Email Address" className="pb-3" />
-        <FormControl className={classes.formControl}>
-          <InputLabel id="demo-simple-select-label">Category</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={country}
-            onChange={handleChange}
-          >
-            <MenuItem value="United Kingdom">United Kingdom</MenuItem>
-            <MenuItem value="Canada">Canada</MenuItem>
-            <MenuItem value="Australia">Australia</MenuItem>
-          </Select>
-        </FormControl>
+        <CommonInput label="Job Title"></CommonInput>
+        <CommonInput label="Job Description"></CommonInput>
+        <SelectMaterial></SelectMaterial>
         <div className="mt-5">
           <BlackButton
             page_url="/createjob_employ"

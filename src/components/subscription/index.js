@@ -33,7 +33,7 @@ const Subscription = ({ plan }) => {
                       <span class="fa-li">
                         <i class="fas fa-times"></i>
                       </span>
-                      Monthly Status Reports
+                      Monthly Status
                     </li>
                   </ul>
                   <a href="#" class="btn btn-block text-uppercase">
@@ -144,7 +144,7 @@ const Subscription = ({ plan }) => {
                       <span class="fa-li">
                         <i class="fas fa-times"></i>
                       </span>
-                      Monthly Status Reports
+                      Monthly Status
                     </li>
                   </ul>
                   <a href="#" class="btn btn-block text-uppercase">

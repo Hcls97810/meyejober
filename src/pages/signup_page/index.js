@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
 import BlackButton from "./../../components/black_button";
+import CommonInput from "./../../components/common_input";
 import "./style.scss";
 
 function SignUpPage() {
@@ -14,14 +15,14 @@ function SignUpPage() {
           </div>
         </div>
         <div className="signup-section2">
-          <TextField label="Email Address" className="pb-3" />
-          <TextField label="Password" className="pb-3" />
-          <TextField label="Phone Number" className="pb-3" />
-          <div className="pt-3">
+          <CommonInput label="Email Address"></CommonInput>
+          <CommonInput label="Password"></CommonInput>
+          <CommonInput label="Phone Number"></CommonInput>
+          <div className="signup-section2-alignleft mt-3">
             <input type="checkbox" name="vehicle1" value="Bike" /> By creating
             an account you agree to meyejobber's
           </div>
-          <div className="container">
+          <div className="signup-section2-alignleft pl-3">
             <a href="#" className="signup-section2-term">
               Terms and Conditions
             </a>{" "}
@@ -32,9 +33,9 @@ function SignUpPage() {
             </a>
           </div>
           <div className="mt-5">
-            <BlackButton btn_name="SIGN UP" page_url="/dashboard"></BlackButton>
+            <BlackButton btn_name="SIGN UP" page_url="/profile"></BlackButton>
           </div>
-          <div className="signup-section2-textlink">
+          <div className="signup-section2-textlink mt-3">
             <a href="/forgot" className="signup-section2-forgot">
               Forgot Password?
             </a>

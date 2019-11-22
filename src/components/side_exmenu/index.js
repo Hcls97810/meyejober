@@ -39,7 +39,7 @@ export class SideExMenu extends Component {
           </div>
           <div className="dashboard-exmenu-items">
             <img src={ImgProfile} className="imgsize" />
-            <a href="/profile" className="exmenuitem">
+            <a href="#" className="exmenuitem">
               Profile
             </a>
           </div>

@@ -15,8 +15,8 @@
 .signup-section--input {
   width: 50%;
   padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 13%;
+  padding-right: 13%;
   display: flex;
   flex-direction: column;
 }
@@ -24,14 +24,15 @@
 .signup-section1 {
   width: 100%;
   align-items: center;
-  padding-bottom: 40px;
+  text-align: left;
+  padding-bottom: 2.5rem;
   &-large-title {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-family: "Lato";
     font-weight: 700;
   }
   &-small-title {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Lato";
     font-weight: lighter;
   }
@@ -41,14 +42,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 .signup-section2-forgotpasswd {
   color: black;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
+
+.signup-section2-alignleft {
+  text-align: left;
+}
+
 .signup-section2-term {
   color: black;
   border-bottom: 1px solid black;
@@ -67,19 +71,19 @@
 }
 .signup-section2-sigup-btn {
   width: 100%;
-  height: 70px;
+  height: 4.375rem;
   color: white;
   background-color: black;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   filter: drop-shadow(0 0 10px rgba(27, 27, 27, 0.5));
   border: 1px solid black;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
   &-text {
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     &:hover {
       color: white;
@@ -95,26 +99,26 @@
   flex-direction: column;
 }
 .signup-section2-forgot {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   color: black;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Lato";
   font-weight: 300;
-  width: 200px;
+  width: 12.5rem;
   &:hover {
     text-decoration: none;
     color: black;
   }
 }
 .signup-section2-signin {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   color: black;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   font-family: "Lato";
-  width: 70px;
+  width: 4.375rem;
   &:hover {
     color: black;
     text-decoration-color: black;

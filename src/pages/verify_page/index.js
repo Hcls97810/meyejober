@@ -56,7 +56,7 @@ function VerifyPage() {
             />
           </div>
           <div className="mt-5">
-            <BlackButton btn_name="VERIFY" page_url="/verify"></BlackButton>
+            <BlackButton btn_name="VERIFY" page_url="/reset"></BlackButton>
           </div>
         </div>
       </div>

@@ -23,7 +23,9 @@ export class Dashboard extends Component {
             <div className="dashboard-job-main-desp">
               Good morning John, here are your posted jobs!
             </div>
-            <Carousel></Carousel>
+            <div className="ml-5">
+              <Carousel></Carousel>
+            </div>
           </div>
           <div className="dashboard-job-footer">
             <AddButton
