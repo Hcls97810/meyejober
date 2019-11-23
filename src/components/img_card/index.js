@@ -19,11 +19,13 @@ const ImageCard = ({ img, title, desc, location, time }) => {
         <div className="imagecard-section2-footer">
           <div className="imagecard-section2-footer-imagetitle">
             <img src={ImgLocation} className="imagecard-section2-img" />
-            <div className="imagecard-section2-small-title">{location}</div>
+            <div className="imagecard-section2-small-title ml-2">
+              {location}
+            </div>
           </div>
           <div className="imagecard-section2-footer-imagetitle">
             <img src={ImgTime} className="imagecard-section2-img" />
-            <div className="imagecard-section2-small-title">{time}</div>
+            <div className="imagecard-section2-small-title ml-2">{time}</div>
           </div>
         </div>
       </div>

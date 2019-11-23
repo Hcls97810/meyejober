@@ -10,15 +10,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   &-header {
     text-align: right;
-    padding-right: 20px;
+    padding-right: 1.25rem;
   }
   &-footer {
     margin-left: 5%;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -26,29 +26,29 @@
     align-items: left;
     &-label {
       color: black;
-      font-size: 30px;
+      font-size: 1.875rem;
       font-family: "Lato";
       font-weight: 400;
-      padding-left: 10px;
+      padding-left: 0.625rem;
     }
   }
 }
 .imgsize {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.625rem;
   opacity: 0.7;
 }
 
 .exmenuitem {
   color: #5a5a5a;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: "Lato";
   &:hover {
     color: black;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none;
   }
   // &:active {
@@ -67,11 +67,11 @@
 
 .dashboard-job-main-title {
   color: black;
-  font-size: 48px;
+  font-size: 3rem;
   font-family: "Lato";
   font-weight: 700;
   text-align: left;
-  margin-left: 50px;
+  margin-left: 3.125rem;
 }
 .dashboard-job-main-desp {
   color: black;
@@ -79,8 +79,8 @@
   font-family: "Lato";
   font-weight: 400;
   text-align: left;
-  margin-left: 50px;
-  margin-bottom: 30px;
+  margin-left: 3.125rem;
+  margin-bottom: 1.875rem;
 }
 .dashboard-createjob-detail-link {
   color: white;

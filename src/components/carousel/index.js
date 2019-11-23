@@ -8,22 +8,27 @@ import {
   FaLongArrowAltDown
 } from "react-icons/fa";
 import ImgCard from "./../img_card";
-// const Card = ({ img, title, desc }) => {
-//   return (
-//     <div className="swiper-slide">
-//       <div className="carousel-item-img">
-//         <img src={img} alt="img"></img>
-//       </div>
-//       <div>
-//         <div className="h3--text">{title}</div>
-//         <p>{desc}</p>
-//       </div>
-//     </div>
-//   );
-// };
 
 const Carousel = () => {
   const data = [
+    {
+      img:
+        "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_291,h_163/v1570228859/assets/4d/ff1841-da7f-4738-bbe2-09d7ef6d0b36/original/2-Roles_CustService_3.jpg",
+      title: "Customer service",
+      desc:
+        "Help create outstanding customer experiences for businesses in a variety of environments.",
+      location: "London",
+      time: "one day ago"
+    },
+    {
+      img:
+        "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_291,h_163/v1570228859/assets/4d/ff1841-da7f-4738-bbe2-09d7ef6d0b36/original/2-Roles_CustService_3.jpg",
+      title: "Customer service",
+      desc:
+        "Help create outstanding customer experiences for businesses in a variety of environments.",
+      location: "London",
+      time: "one day ago"
+    },
     {
       img:
         "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_291,h_163/v1570228859/assets/4d/ff1841-da7f-4738-bbe2-09d7ef6d0b36/original/2-Roles_CustService_3.jpg",

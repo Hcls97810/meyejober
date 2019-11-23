@@ -13,30 +13,13 @@ import Journey from "./../../../components/journey";
 import BlackButton from "./../../../components/black_button";
 import CommonInput from "./../../../components/common_input";
 import SelectMaterial from "./../../../components/select_material";
+import SideMinMenu from "./../../../components/side_minmenu";
 import "./style.scss";
 
-const useStyles = makeStyles(theme => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 120
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2)
-  }
-}));
-
 function JobDetail() {
-  const classes = useStyles();
-  const [country, setCountry] = React.useState("");
-
-  const inputLabel = React.useRef(null);
-  const [labelWidth, setLabelWidth] = React.useState(0);
-
-  const handleChange = event => {
-    setCountry(event.target.value);
-  };
   return (
     <div className="jobdetail">
+      <SideMinMenu></SideMinMenu>
       <div className="jobdetail-exmenu">
         <Journey job_state="1"></Journey>
       </div>

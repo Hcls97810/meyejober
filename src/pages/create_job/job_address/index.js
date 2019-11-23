@@ -14,17 +14,21 @@ import BlackButton from "./../../../components/black_button";
 import Toggle from "./../../../components/toggle";
 import BackButton from "./../../../components/back_button";
 import UploadPreview from "./../../../components/upload_image";
+import SideMinMenu from "./../../../components/side_minmenu";
 import "./style.scss";
 
 function JobAddress() {
   return (
     <div className="jobaddress">
+      <SideMinMenu></SideMinMenu>
       <div className="jobaddress-exmenu">
         <Journey job_state="3"></Journey>
       </div>
+      <div className="jobaddress-sectionback">
+        <BackButton page_url="/createjob_employ"></BackButton>
+      </div>
       <div className="jobaddress-section">
         <div className="jobaddress-section-title">
-          <BackButton page_url="/createjob_employ"></BackButton>
           <div className="jobaddress-job-main-title">Create Job</div>
         </div>
         <div className="jobaddress-title">

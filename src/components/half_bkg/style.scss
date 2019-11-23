@@ -8,28 +8,26 @@
   justify-content: center;
   &-title {
     color: white;
-    font-size: 85px;
-    letter-spacing: -5px;
+    font-size: 5.313rem;
+    letter-spacing: -0.313rem;
     font-family: "S FCompact Text";
-    padding-bottom: 50px;
   }
   &-numbergroup {
     display: flex;
     flex-direction: row;
-
     &-number {
       color: white;
-      font-size: 100px;
-      width: 117px;
-      height: 117px;
-      border-radius: 10px;
+      font-size: 6.25rem;
+      width: 7.313rem;
+      height: 7.313rem;
+      border-radius: 0.625rem;
       filter: drop-shadow(0 0 45px rgba(123, 126, 142, 0.5));
       background-color: #7b7e8e;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 0.313rem;
+      margin-right: 0.313rem;
     }
   }
 }

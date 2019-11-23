@@ -19,35 +19,36 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .forgot-section1 {
-  width: 100%;
+  width: 80%;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
   &-large-title {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     font-family: "Lato";
+    text-align: left;
   }
   &-small-title {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: lighter;
     font-family: "Lato";
+    text-align: left;
   }
 }
 .forgot-section2 {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .forgot-section2-signin {
   color: black;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   font-family: "Lato";
   &:hover {

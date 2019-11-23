@@ -1,13 +1,13 @@
 .imagecard {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   display: flex;
   position: relative;
   flex-direction: column;
 }
 .imagecard-section1 {
-  width: 379px;
-  height: 379px;
+  width: 23.688rem;
+  height: 23.688rem;
   border-radius: 20px;
   filter: drop-shadow(0 0 10px rgba(27, 27, 27, 0.3));
   background-color: white;
@@ -15,10 +15,10 @@
   position: relative;
 }
 .imagecard-img {
-  width: 379px;
-  height: 231px;
+  width: 23.688rem;
+  height: 14.438rem;
   border-radius: 20px;
-  filter: drop-shadow(0px 30px 10px rgba(27, 27, 27, 0.26));
+  filter: drop-shadow(0px 1.875rem 0.625rem rgba(27, 27, 27, 0.26));
   background-image: linear-gradient(
     178deg,
     #717171 0%,
@@ -27,47 +27,51 @@
 }
 
 .imagecard--title {
-  padding-bottom: 5px;
-  padding-top: 15px;
-  padding-left: 20px;
+  padding-bottom: 0.313rem;
+  padding-top: 0.938rem;
+  padding-left: 1.25rem;
   color: white;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   font-weight: 500;
   position: absolute;
 }
 
 .imagecard-section2 {
   position: absolute;
-  top: 250px;
+  top: 15.625rem;
 }
 .imagecard-section2-desp {
   color: black;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Lato";
   font-weight: 300;
   display: flex;
-  padding-left: 20px;
+  padding-left: 1.25rem;
   flex-direction: row;
   width: 90%;
+  text-align: left;
 }
 .imagecard-section2-footer {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 20px;
+  margin-top: 12%;
+  padding-left: 1.25rem;
   padding-right: 50px;
 }
 .imagecard-section2-small-title {
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Lato";
   font-weight: 700;
 }
 .imagecard-section2-img {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 .imagecard-section2-footer-imagetitle {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }

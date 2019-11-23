@@ -10,10 +10,10 @@
       align-items: center;
       background-color: black;
       color: black;
-      width: 35px;
-      height: 35px;
-      border-radius: 17px;
-      font-size: 30px;
+      width: 2.188rem;
+      height: 2.188rem;
+      border-radius: 1.063rem;
+      font-size: 1.875rem;
       font-weight: 700;
       font-family: "Lato";
     }
@@ -22,10 +22,10 @@
       align-items: center;
       background-color: #7b7e8e;
       color: #7b7e8e;
-      width: 35px;
-      height: 35px;
-      border-radius: 17px;
-      font-size: 30px;
+      width: 2.188rem;
+      height: 2.188rem;
+      border-radius: 1.063rem;
+      font-size: 1.875rem;
       font-weight: 700;
       font-family: "Lato";
     }
@@ -33,13 +33,13 @@
   &-stick {
     &-on {
       background-color: black;
-      width: 3px;
-      height: 116px;
+      width: 0.188;
+      height: 7.25rem;
     }
     &-off {
       background-color: #7b7e8e;
-      width: 3px;
-      height: 116px;
+      width: 0.188rem;
+      height: 7.25rem;
     }
   }
 }

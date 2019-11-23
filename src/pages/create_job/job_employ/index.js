@@ -14,6 +14,7 @@ import BlackButton from "./../../../components/black_button";
 import Toggle from "./../../../components/toggle";
 import ContractLength from "./../../../components/contract_length";
 import BackButton from "./../../../components/back_button";
+import SideMinMenu from "./../../../components/side_minmenu";
 import "./style.scss";
 
 const useStyles = makeStyles(theme => ({
@@ -38,12 +39,15 @@ function JobEmploy() {
   };
   return (
     <div className="jobemploy">
+      <SideMinMenu></SideMinMenu>
       <div className="jobemploy-exmenu">
         <Journey job_state="2"></Journey>
       </div>
+      <div className="jobemploy-sectionback">
+        <BackButton page_url="/createjob_detail"></BackButton>
+      </div>
       <div className="jobemploy-section">
         <div className="jobemploy-section-title">
-          <BackButton page_url="/createjob_detail"></BackButton>
           <div className="jobemploy-job-main-title">Create Job</div>
         </div>
         <TextField label="Salary" className="pb-3" />

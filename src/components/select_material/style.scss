@@ -3,8 +3,8 @@
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   position: relative;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .selectmaterial-text {
@@ -12,8 +12,8 @@
   font-family: inherit;
   background-color: transparent;
   width: 100%;
-  padding: 10px 10px 10px 0;
-  font-size: 23px;
+  padding: 0.625rem 0.625rem 0.625rem 0;
+  font-size: 1.438rem;
   border-radius: 0;
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 1);
@@ -33,28 +33,28 @@
 
 .selectmaterial:after {
   position: absolute;
-  top: 18px;
-  right: 10px;
+  top: 1.125rem;
+  right: 0.625rem;
   /* Styling the down arrow */
   width: 0;
   height: 0;
   padding: 0;
   content: "";
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid rgba(0, 0, 0, 0.12);
+  border-left: 0.375rem solid transparent;
+  border-right: 0.375rem solid transparent;
+  border-top: 0.375rem solid rgba(0, 0, 0, 0.12);
   pointer-events: none;
 }
 
 /* LABEL ======================================= */
 .selectmaterial-label {
   color: rgba(0, 0, 0, 0.26);
-  font-size: 23px;
+  font-size: 1.438rem;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
   left: 0;
-  top: 10px;
+  top: 0.625rem;
   transition: 0.2s ease all;
 }
 
@@ -64,7 +64,7 @@
   color: black;
   top: -10px;
   transition: 0.2s ease all;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* BOTTOM BARS ================================= */
@@ -103,7 +103,7 @@
 .selectmaterial-highlight {
   position: absolute;
   height: 60%;
-  width: 100px;
+  width: 6.25rem;
   top: 25%;
   left: 0;
   pointer-events: none;

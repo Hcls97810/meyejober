@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
 import HalfBkg from "./../../components/half_bkg";
 import BlackButton from "./../../components/black_button";
+import CommonInput from "./../../components/common_input";
 import "./style.scss";
 
 function ForgotPage() {
@@ -15,7 +16,7 @@ function ForgotPage() {
           </div>
         </div>
         <div className="forgot-section2">
-          <TextField label="Phone Number" className="pb-3" />
+          <CommonInput label="Phone Number"></CommonInput>
           <div className="mt-5">
             <BlackButton btn_name="CONTINUE" page_url="/verify"></BlackButton>
           </div>

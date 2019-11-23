@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
+import BlackButton from "./../../components/black_button";
+import CommonInput from "./../../components/common_input";
+import HalfBkg from "./../../components/half_bkg";
 import "./style.scss";
 
 function ResetPage() {
@@ -13,25 +16,15 @@ function ResetPage() {
           </div>
         </div>
         <div className="reset-section2">
-          <TextField label="New Password" className="pb-3" />
-          <TextField label="Confirm Password" className="pb-3" />
-          <div className="reset-section2-update-btn">
-            <a href="#" className="reset-section2-update-btn-text">
-              UPDATE
-            </a>
+          <CommonInput label="New Password"></CommonInput>
+          <CommonInput label="Confirm Password"></CommonInput>
+          <div className="mt-5">
+            <BlackButton btn_name="UPDATE" page_url="/dashboard"></BlackButton>
           </div>
         </div>
       </div>
       <div className="reset-section--bkg">
-        <div className="reset-section--bkg-title">
-          meye<b>jobber</b>
-        </div>
-        <div className="reset-section--bkg-numbergroup">
-          <div className="reset-section--bkg-numbergroup-number">1</div>
-          <div className="reset-section--bkg-numbergroup-number">2</div>
-          <div className="reset-section--bkg-numbergroup-number">3</div>
-          <div className="reset-section--bkg-numbergroup-number">4</div>
-        </div>
+        <HalfBkg></HalfBkg>
       </div>
     </div>
   );

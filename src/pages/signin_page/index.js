@@ -81,11 +81,6 @@ export default class SignInPage extends React.Component {
           <div className="mb-3">
             <BlackButton btn_name="SIGNIN" page_url="/dashboard"></BlackButton>
           </div>
-          <form className="mb-3" onSubmit={this.submitHandler}>
-            <input type="email" id="email" ref={this.emailEl} />
-            <input type="password" id="passwordd" ref={this.passwordEl} />
-            <input type="submit" value="SIGNIN_TEST" />
-          </form>
           <a href="/forgot" className="signin-section2-forgotpasswd pt-3">
             Forgot Password?
           </a>

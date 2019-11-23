@@ -2,7 +2,7 @@ $main-color: black;
 $secondary-color: white;
 $main-color: white;
 $secondary-color: black;
-$width: 400px; // Change Me
+$width: 25rem; // Change Me
 
 * {
   box-sizing: border-box;
@@ -40,7 +40,7 @@ $width: 400px; // Change Me
   &:valid {
     // border-bottom-color: rgba(white, .5);
     ~ label {
-      top: 15px;
+      top: 0.938rem;
       font-size: $width/25;
       font-family: "Lato";
       color: rgba(black, 1);
@@ -50,7 +50,7 @@ $width: 400px; // Change Me
     outline: none;
     // border-bottom-color: $secondary-color;
     ~ label {
-      top: 15px;
+      top: 0.938rem;
       font-size: $width/25;
       font-family: "Lato";
       font-family: 700;
