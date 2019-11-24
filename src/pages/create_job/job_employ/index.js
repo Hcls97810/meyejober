@@ -15,6 +15,8 @@ import Toggle from "./../../../components/toggle";
 import ContractLength from "./../../../components/contract_length";
 import BackButton from "./../../../components/back_button";
 import SideMinMenu from "./../../../components/side_minmenu";
+import CommonInput from "./../../../components/common_input";
+import SelectMaterial from "./../../../components/select_material";
 import "./style.scss";
 
 const useStyles = makeStyles(theme => ({
@@ -50,22 +52,8 @@ function JobEmploy() {
         <div className="jobemploy-section-title">
           <div className="jobemploy-job-main-title">Create Job</div>
         </div>
-        <TextField label="Salary" className="pb-3" />
-        <FormControl className={classes.formControl}>
-          <InputLabel id="demo-simple-select-label">
-            Payment Frequency
-          </InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={country}
-            onChange={handleChange}
-          >
-            <MenuItem value="United Kingdom">United Kingdom</MenuItem>
-            <MenuItem value="Canada">Canada</MenuItem>
-            <MenuItem value="Australia">Australia</MenuItem>
-          </Select>
-        </FormControl>
+        <CommonInput label="Salary"></CommonInput>
+        <SelectMaterial label="Payment Frequency"></SelectMaterial>
         <div className="jobemploy-title">Job Type</div>
         <Toggle left_value="Permanent" right_value="Contract"></Toggle>
         <div className="jobemploy-title">Contract Length</div>

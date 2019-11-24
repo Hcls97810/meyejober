@@ -11,7 +11,7 @@ const SelectMaterial = ({ label }) => {
       </select>
       <span class="selectmaterial-highlight"></span>
       <span class="selectmaterial-bar"></span>
-      <label class="selectmaterial-label">Select</label>
+      <label class="selectmaterial-label">{label}</label>
     </div>
   );
 };

@@ -27,7 +27,7 @@ function JobDetail() {
         <div className="jobdetail-job-main-title">Create Job</div>
         <CommonInput label="Job Title"></CommonInput>
         <CommonInput label="Job Description"></CommonInput>
-        <SelectMaterial></SelectMaterial>
+        <SelectMaterial label="Category"></SelectMaterial>
         <div className="mt-5">
           <BlackButton
             page_url="/createjob_employ"
