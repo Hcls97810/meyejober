@@ -6,6 +6,7 @@ import ImgMaster from "./../../assets/img_master_card.png";
 import ImgCheck from "./../../assets/img_check.png";
 import AddButton from "./../../components/add_button";
 import BlackButton from "./../../components/black_button";
+import CommonInput from "./../../components/common_input";
 import { TextField } from "@material-ui/core";
 import "./style.scss";
 
@@ -72,12 +73,16 @@ export default class AddCard extends React.Component {
         </div>
         <div className="addcard-section">
           <div className="addcard-section-title">Register a new card</div>
-          <TextField label="Card Number" className="pb-3" />
+          <CommonInput label="Card Number"></CommonInput>
           <div className="addcard-row-section">
-            <TextField label="Expire Date" className="pb-3" />
-            <TextField label="Security Code" className="pb-3" />
+            <div className="pr-3">
+              <CommonInput label="Expire Date"></CommonInput>
+            </div>
+            <div className="pl-3">
+              <CommonInput label="Security Code"></CommonInput>
+            </div>
           </div>
-          <TextField label="Cardholder Name" className="pb-3" />
+          <CommonInput label="Cardholder Name"></CommonInput>
           <div className="addcard-desp">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do,
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do,
