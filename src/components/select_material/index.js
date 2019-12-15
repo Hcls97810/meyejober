@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import "./style.scss";
-const SelectMaterial = ({ label }) => {
+
+const SelectMaterial = ({ label, category }) => {
+  var customData = require("./../../assets/category.json");
+  console.log("materail", customData[category]);
   return (
     <div class="selectmaterial">
       <select class="selectmaterial-text" required>
         <option value="" disabled selected></option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
+        {customData[category] &&
+          customData[category].map(item => {
+            return <option value={item.name}>{item.name}</option>;
+          })}
       </select>
       <span class="selectmaterial-highlight"></span>
       <span class="selectmaterial-bar"></span>

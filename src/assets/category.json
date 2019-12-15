@@ -1,0 +1,204 @@
+{
+  "allCategories": [
+    {
+      "name": "Accounting"
+    },
+    {
+      "name": "Administration"
+    },
+    {
+      "name": "Architecture"
+    },
+    {
+      "name": "Arts & Entertainment"
+    },
+    {
+      "name": "Aviation"
+    },
+    {
+      "name": "Banking"
+    },
+    {
+      "name": "Beauty & Wellness"
+    },
+    {
+      "name": "Chemical Engineering"
+    },
+    {
+      "name": "Civil Engineering"
+    },
+    {
+      "name": "Cleaning & Sanitation"
+    },
+    {
+      "name": "Community & Social Service"
+    },
+    {
+      "name": "Construction"
+    },
+    {
+      "name": "Customer Service"
+    },
+    {
+      "name": "Dental"
+    },
+    {
+      "name": "Driving"
+    },
+    {
+      "name": "Education & Instruction"
+    },
+    {
+      "name": "Electrical & Engineering"
+    },
+    {
+      "name": "Food Preparation"
+    },
+    {
+      "name": "Hospitality & Tourism"
+    },
+    {
+      "name": "Human Resources"
+    },
+    {
+      "name": "IT Operations & Helpdesk"
+    },
+    {
+      "name": "Information Design & Documentation"
+    },
+    {
+      "name": "Installation & Maintenance"
+    },
+    {
+      "name": "Insurance"
+    },
+    {
+      "name": "Legal"
+    },
+    {
+      "name": "Loading & Stocking"
+    },
+    {
+      "name": "Logistic Support"
+    },
+    {
+      "name": "Management"
+    },
+    {
+      "name": "Marketing"
+    },
+    {
+      "name": "Mathematics"
+    },
+    {
+      "name": "Mechanical Engineering"
+    },
+    {
+      "name": "Media & Communication"
+    },
+    {
+      "name": "Medical Information"
+    },
+    {
+      "name": "Medical Technician"
+    },
+    {
+      "name": "Nursing"
+    },
+    {
+      "name": "Personal Care & Home Health"
+    },
+    {
+      "name": "Pharmacy"
+    },
+    {
+      "name": "Physicians & Surgeons"
+    },
+    {
+      "name": "Production & Manufactoring"
+    },
+    {
+      "name": "Project Management"
+    },
+    {
+      "name": "Real Estate"
+    },
+    {
+      "name": "Retail"
+    },
+    {
+      "name": "Sales"
+    },
+    {
+      "name": "Scientific Research"
+    },
+    {
+      "name": "Security & Public Safety"
+    },
+    {
+      "name": "Software Developement"
+    },
+    {
+      "name": "Sports"
+    },
+    {
+      "name": "Therapy"
+    },
+    {
+      "name": "Veterinary"
+    }
+  ],
+  "frequencyContract": [
+    {
+      "name": "Per Month"
+    },
+    {
+      "name": "Per Year"
+    }
+  ],
+  "frequencyPermanent": [
+    {
+      "name": "Per Hour"
+    },
+    {
+      "name": "Per Day"
+    },
+    {
+      "name": "Per Week"
+    },
+    {
+      "name": "Per Month"
+    },
+    {
+      "name": "Fixed Price"
+    }
+  ],
+  "countryResidence": [
+    {
+      "name": "UK"
+    },
+    {
+      "name": "Ukraine"
+    },
+    {
+      "name": "Australia"
+    },
+    {
+      "name": "Canada"
+    }
+  ],
+  "nationality": [
+    {
+      "name": "UK"
+    },
+    {
+      "name": "Ukraine"
+    },
+    {
+      "name": "Australia"
+    },
+    {
+      "name": "Canada"
+    }
+  ]
+}

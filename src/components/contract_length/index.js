@@ -65,26 +65,25 @@ export class ContractLength extends Component {
         </div>
         <div className="contract-length-label">
           {this.state.progress_state == 0
-            ? "No Contract Length"
+            ? "Less than a week"
             : this.state.progress_state == 1
-            ? "One Month"
+            ? "Less than a month"
             : this.state.progress_state == 2
-            ? "Two Month"
+            ? "A month"
             : this.state.progress_state == 3
-            ? "Three Month"
+            ? "Two months"
             : this.state.progress_state == 4
-            ? "Four Month"
+            ? "Three months"
             : this.state.progress_state == 5
-            ? "Five Month"
+            ? "More than three months"
             : this.state.progress_state > 5
-            ? "Five Month"
+            ? "More than three months"
             : this.state.progress_state < 0
-            ? "No Contract Length"
+            ? "Less than a week"
             : "Error Contract"}
         </div>
       </div>
     );
   }
 }
-
 export default ContractLength;

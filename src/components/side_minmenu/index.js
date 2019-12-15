@@ -26,9 +26,9 @@ export class SideMinMenu extends Component {
           <div className="dashboard-minmenu-items">
             <img src={ImgProposals} className="dashboard-minmenu-imgsize" />
           </div>
-          <div className="dashboard-minmenu-items">
+          <Link to="/wallet" className="dashboard-minmenu-items">
             <img src={ImgWallet} className="dashboard-minmenu-imgsize" />
-          </div>
+          </Link>
           <div className="dashboard-minmenu-items">
             <img src={ImgProfile} className="dashboard-minmenu-imgsize" />
           </div>

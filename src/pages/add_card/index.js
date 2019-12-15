@@ -7,6 +7,7 @@ import ImgCheck from "./../../assets/img_check.png";
 import AddButton from "./../../components/add_button";
 import BlackButton from "./../../components/black_button";
 import CommonInput from "./../../components/common_input";
+import SideMinMenu from "./../../components/side_minmenu";
 import { TextField } from "@material-ui/core";
 import "./style.scss";
 
@@ -36,6 +37,7 @@ export default class AddCard extends React.Component {
   render() {
     return (
       <div className="addcard">
+        <SideMinMenu></SideMinMenu>
         <div className="addcard-exmenu">
           <div className="addcard-card-container">
             <img

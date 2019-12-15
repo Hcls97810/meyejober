@@ -53,7 +53,10 @@ function JobEmploy() {
           <div className="jobemploy-job-main-title">Create Job</div>
         </div>
         <CommonInput label="Salary"></CommonInput>
-        <SelectMaterial label="Payment Frequency"></SelectMaterial>
+        <SelectMaterial
+          label="Payment Frequency"
+          category="frequencyPermanent"
+        ></SelectMaterial>
         <div className="jobemploy-title">Job Type</div>
         <Toggle left_value="Permanent" right_value="Contract"></Toggle>
         <div className="jobemploy-title">Contract Length</div>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AvatarCard from "./../../components/avatar_card";
 import Toggle from "./../../components/toggle";
+import SideMinMenu from "./../../components/side_minmenu";
 import Subscription from "./../../components/subscription";
 import ImgVisa from "./../../assets/img_visa_card.png";
 import ImgMaster from "./../../assets/img_master_card.png";
@@ -35,6 +36,7 @@ export default class WalletPage extends React.Component {
   render() {
     return (
       <div className="walletpage">
+        <SideMinMenu></SideMinMenu>
         <div className="walletpage-exmenu">
           <div className="walletpage-card-container">
             <img
@@ -89,7 +91,7 @@ export default class WalletPage extends React.Component {
           <div className="walletpage-row-section">
             <div className="walletpage-item-label">Subscription Type</div>
             <div className="walletpage-item-toggle">
-              {/* <Toggle left_value="Monthly" right_value="Yearly"></Toggle> */}
+              <Toggle left_value="Monthly" right_value="Yearly"></Toggle>
             </div>
           </div>
           <Subscription></Subscription>
