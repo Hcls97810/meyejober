@@ -19,26 +19,7 @@ import CommonInput from "./../../../components/common_input";
 import SelectMaterial from "./../../../components/select_material";
 import "./style.scss";
 
-const useStyles = makeStyles(theme => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 120
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2)
-  }
-}));
-
 function JobEmploy() {
-  const classes = useStyles();
-  const [country, setCountry] = React.useState("");
-
-  const inputLabel = React.useRef(null);
-  const [labelWidth, setLabelWidth] = React.useState(0);
-
-  const handleChange = event => {
-    setCountry(event.target.value);
-  };
   return (
     <div className="jobemploy">
       <SideMinMenu></SideMinMenu>
@@ -52,7 +33,9 @@ function JobEmploy() {
         <div className="jobemploy-section-title">
           <div className="jobemploy-job-main-title">Create Job</div>
         </div>
-        <CommonInput label="Salary"></CommonInput>
+        <div>
+          <CommonInput label="Salary"></CommonInput>
+        </div>
         <SelectMaterial
           label="Payment Frequency"
           category="frequencyPermanent"
@@ -62,7 +45,7 @@ function JobEmploy() {
         <div className="jobemploy-title">Contract Length</div>
         <ContractLength></ContractLength>
         <div className="jobemploy-title">Employment Type</div>
-        {/* <Toggle left_value="Full Time" right_value="Part Time"></Toggle> */}
+        <Toggle left_value="Full Time" right_value="Part Time"></Toggle>
         <div className="mt-5">
           <BlackButton
             page_url="/createjob_address"
