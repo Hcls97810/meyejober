@@ -5,6 +5,8 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo-hooks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import SiginInPage from "./pages/signin_page";
@@ -19,51 +21,25 @@ import JobEmploy from "./pages/create_job/job_employ";
 import JobAddress from "./pages/create_job/job_address";
 import WalletPage from "./pages/wallet_page";
 import AddCard from "./pages/add_card";
-import AuthContext from "./components/auth-context/auth-context";
+
+const client = new ApolloClient({
+  uri: "http://18.130.169.111:3000/graphql"
+});
 
 class App extends Component {
-  state = {
-    newUser: null,
-    role: null,
-    token: null,
-    _id: null
-  };
-
-  login = (newUser, role, token, _id) => {
-    this.setState({ newUser: newUser, role: role, token: token, _id: _id });
-  };
-
-  logout = () => {
-    this.setState({ newUser: null, role: null, token: null, _id: null });
-  };
-
   render() {
     return (
-      <Router>
-        <AuthContext.Provider
-          value={{
-            newUser: this.state.newUser,
-            role: this.state.role,
-            token: this.state.token,
-            _id: this.state._id,
-            login: this.login,
-            logout: this.logout
-          }}
-        >
+      <ApolloProvider client={client}>
+        <Router>
           <div className="App">
             <Switch>
-              {!this.state.token && <Redirect from="/" to="/signin" exact />}
-              {!this.state.token && (
-                <Route exact path="/signin" component={SiginInPage} />
-              )}
+              <Route exact path="/" component={SiginInPage} />
               <Route exact path="/signup" component={SiginUpPage} />
               <Route exact path="/forgot" component={ForgotPage} />
               <Route exact path="/reset" component={ResetPage} />
               <Route exact path="/verify" component={VerifyPage} />
               <Route exact path="/profile" component={ProfilePage} />
-              {/* {this.state.token && ( */}
               <Route exact path="/dashboard" component={Dashboard} />
-              {/* )} */}
               <Route exact path="/createjob_detail" component={JobDetail} />
               <Route exact path="/createjob_employ" component={JobEmploy} />
               <Route exact path="/createjob_address" component={JobAddress} />
@@ -71,8 +47,8 @@ class App extends Component {
               <Route exact path="/addcard" component={AddCard} />
             </Switch>
           </div>
-        </AuthContext.Provider>
-      </Router>
+        </Router>
+      </ApolloProvider>
     );
   }
 }

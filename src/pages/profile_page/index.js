@@ -15,27 +15,7 @@ import LookupAddress from "./../../components/lookup_address";
 import UploadImage from "./../../components/upload_image";
 import "./style.scss";
 
-const useStyles = makeStyles(theme => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 120
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2)
-  }
-}));
-
 function ProfilePage() {
-  const classes = useStyles();
-  const [country, setCountry] = React.useState("");
-
-  const inputLabel = React.useRef(null);
-  const [labelWidth, setLabelWidth] = React.useState(0);
-
-  const handleChange = event => {
-    setCountry(event.target.value);
-  };
-
   return (
     <div className="container profile mb-5">
       <div className="container profile-section1">
@@ -83,6 +63,10 @@ function ProfilePage() {
           <CommonInput label="Business Email"></CommonInput>
           <CommonInput label="Job Title"></CommonInput>
           <CommonInput label="Post Code"></CommonInput>
+          <LookupAddress></LookupAddress>
+          <div className="addressinfo mt-5">
+            <UploadImage></UploadImage>
+          </div>
           <div className="container mt-5">
             <BlackButton
               btn_name="CREATE PROFILE"
