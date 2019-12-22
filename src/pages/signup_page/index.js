@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { useMutation } from "react-apollo-hooks";
 import { useHistory } from "react-router-dom";
 import gql from "graphql-tag";
@@ -11,8 +11,6 @@ function SignUpPage() {
   let history = useHistory();
   let role = "employer";
   let newUser = true;
-
-  const auth = [{ token: "" }, { _id: 0 }, { role: "" }];
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -40,7 +38,6 @@ function SignUpPage() {
       }
     }
   `;
-
   const [signup, { data, loading, error }] = useMutation(SIGN_UP, {
     variables: {
       email: email,
@@ -52,9 +49,18 @@ function SignUpPage() {
   });
 
   const gotoProfile = () => {
-    console.log(data.signup.token);
-    console.log(data.signup._id);
-    history.push("/profile");
+    signup({
+      variables: {
+        email: email,
+        password: password,
+        role: role,
+        phone: phone,
+        newUser: newUser
+      }
+    }).then(dt => {
+      console.log(dt);
+      history.push("/profile");
+    });
   };
 
   return (
@@ -97,7 +103,10 @@ function SignUpPage() {
             </a>
           </div>
           <div className="mt-5">
-            <BlackButton btn_name="SIGN UP" handleEvent={signup}></BlackButton>
+            <BlackButton
+              btn_name="SIGN UP"
+              handleEvent={gotoProfile}
+            ></BlackButton>
             {loading ? (
               <Loader
                 type="ThreeDots"
@@ -108,7 +117,6 @@ function SignUpPage() {
               />
             ) : null}
             {error ? <div className="mt-5">*****Error******</div> : null}
-            {data && data.signup ? <div>success</div> : null}
           </div>
           <div className="signup-section2-textlink mt-3">
             <a href="/forgot" className="signup-section2-forgot">

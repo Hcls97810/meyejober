@@ -1,12 +1,4 @@
-import React, { Component } from "react";
-import {
-  makeStyles,
-  TextField,
-  Select,
-  InputLabel,
-  MenuItem,
-  FormControl
-} from "@material-ui/core";
+import React, { useState } from "react";
 import BlackButton from "./../../components/black_button";
 import BlackCircle from "./../../components/black_circle";
 import CommonInput from "./../../components/common_input";
@@ -16,6 +8,29 @@ import UploadImage from "./../../components/upload_image";
 import "./style.scss";
 
 function ProfilePage() {
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [postcode, setPostcode] = useState("");
+  const [country, setCountry] = useState("");
+  const [nation, setNation] = useState("");
+  const [birthday, setBirthday] = useState("");
+  const [pimg, setPimg] = useState("");
+
+  const [bname, setBname] = useState("");
+  const [bactivity, setBactivity] = useState("");
+  const [bwebsite, setBwebsite] = useState("");
+  const [bemail, setBemail] = useState("");
+  const [bjobtitle, setBjobtitle] = useState("");
+  const [bpostcode, setBpostcode] = useState("");
+
+  const gotoDashboard = () => {
+    console.log(pimg);
+  };
+
+  const callbackFunction = childData => {
+    setPimg(childData);
+  };
+
   return (
     <div className="container profile mb-5">
       <div className="container profile-section1">
@@ -32,21 +47,41 @@ function ProfilePage() {
               circle_label2="Personal Profile"
             ></BlackCircle>
           </div>
-          <CommonInput label="First Name"></CommonInput>
-          <CommonInput label="Last Name"></CommonInput>
-          <CommonInput label="Post Code"></CommonInput>
-          <LookupAddress></LookupAddress>
+          <CommonInput
+            label="First Name"
+            value={firstname}
+            onChange={e => setFirstname(e.target.value)}
+          ></CommonInput>
+          <CommonInput
+            label="Last Name"
+            value={lastname}
+            onChange={e => setLastname(e.target.value)}
+          ></CommonInput>
+          <CommonInput
+            label="Post Code"
+            value={postcode}
+            onChange={e => setPostcode(e.target.value)}
+          ></CommonInput>
+          <LookupAddress postcode={postcode}></LookupAddress>
           <SelectMaterial
             label="Country of Residence"
             category="countryResidence"
+            value={country}
+            onChange={e => setCountry(e.target.value)}
           ></SelectMaterial>
           <SelectMaterial
             label="Nationality"
             category="nationality"
+            value={nation}
+            onChange={e => setNation(e.target.value)}
           ></SelectMaterial>
-          <CommonInput label="Birthday"></CommonInput>
+          <CommonInput
+            label="Birthday"
+            value={birthday}
+            onChange={e => setBirthday(e.target.value)}
+          ></CommonInput>
           <div className="addressinfo mt-5">
-            <UploadImage></UploadImage>
+            <UploadImage parentCallback={callbackFunction}></UploadImage>
           </div>
         </div>
         <div className="profile-business">
@@ -70,7 +105,7 @@ function ProfilePage() {
           <div className="container mt-5">
             <BlackButton
               btn_name="CREATE PROFILE"
-              page_url="/dashboard"
+              handleEvent={gotoDashboard}
             ></BlackButton>
           </div>
         </div>

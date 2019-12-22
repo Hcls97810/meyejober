@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import "./style.scss";
 
-const SelectMaterial = ({ label, category }) => {
+const SelectMaterial = ({ label, category, value, onChange }) => {
   var customData = require("./../../assets/category.json");
-  console.log("materail", customData[category]);
+  //console.log("materail", customData[category]);
   return (
     <div className="selectmaterial">
-      <select className="selectmaterial-text" required>
+      <select
+        className="selectmaterial-text"
+        value={value}
+        onChange={onChange}
+        required
+      >
         <option value="" disabled selected></option>
         {customData[category] &&
           customData[category].map(item => {

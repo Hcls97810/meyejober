@@ -5,7 +5,8 @@ export class UploadPreview extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      file: null
+      file: null,
+      imgData: null
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -14,9 +15,17 @@ export class UploadPreview extends Component {
     this.setState({
       file: event.target.files[0]
         ? URL.createObjectURL(event.target.files[0])
-        : this.state.file
+        : this.state.file,
+      imgData: event.target.files[0]
+        ? event.target.files[0]
+        : this.state.imgData
     });
+    this.sendData(this.state.imgData);
   }
+
+  sendData = file => {
+    this.props.parentCallback(file);
+  };
 
   render() {
     return (

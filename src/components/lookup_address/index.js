@@ -13,16 +13,14 @@ export class LookupAddress extends Component {
       noData: false,
       addresses: null,
       selectedAddress: false,
-      postcode: "IG1 4JB",
       index: 0
     };
   }
 
   onShowAddress = async () => {
     console.log(this.state);
-    const { postcode } = this.state;
     const response = await fetch(
-      `https://api.getAddress.io/find/${postcode}?api-key=${GET_ADDRESS_KEY}&expand=true`
+      `https://api.getAddress.io/find/${this.props.postcode}?api-key=${GET_ADDRESS_KEY}&expand=true`
     )
       .then(function(res) {
         return res.json();
