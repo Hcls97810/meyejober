@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import BlackButton from "./../../components/black_button";
 import BlackCircle from "./../../components/black_circle";
 import CommonInput from "./../../components/common_input";
@@ -28,7 +29,29 @@ function ProfilePage() {
   };
 
   const callbackFunction = childData => {
-    setPimg(childData);
+    //setPimg(childData);
+    console.log(childData);
+    var CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/dfr8tcfvq/upload";
+    var CLOUDINARY_UPLOAD_PRESET = "rqr5viz0";
+    var formData = new FormData();
+    formData.append("file", childData);
+    formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
+
+    axios({
+      url: CLOUDINARY_URL,
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      data: formData
+    })
+      .then(function(res) {
+        console.log(formData);
+        console.log(res);
+      })
+      .catch(function(err) {
+        console.log(err);
+      });
   };
 
   return (

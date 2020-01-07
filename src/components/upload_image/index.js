@@ -24,6 +24,7 @@ export class UploadPreview extends Component {
   }
 
   sendData = file => {
+    console.log(file);
     this.props.parentCallback(file);
   };
 
